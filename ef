@@ -12,6 +12,7 @@ imc <- function (peso, altura) {
 
 rcq <- function (cintura, quadril) {
   rcq <- cintura / quadril
+  rcq
 }
 
 
