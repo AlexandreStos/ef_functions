@@ -1,0 +1,27 @@
+
+# Criação de funções para calcular pontuação do Corinthians como mandante e visitante -----------------------------
+
+# criando a função pontos do mandante --------------------------------------------------------
+
+ pontos_mandante <- function(gols_mandante, gols_visitante) {
+  
+  if (gols_mandante > gols_visitante){
+   print(3)
+ } else if(gols_mandante < gols_visitante){
+   print(0)
+ } else {print(1)
+ } 
+}
+ 
+# criando a função de pontos de visitantes --------------------------------
+
+ pontos_visitante <- function(gols_mandante, gols_visitante) {
+   
+   if (gols_visitante > gols_mandante){
+     print(3)
+   } else if(gols_visitante < gols_mandante){
+     print(0)
+   } else {print(1)
+   } 
+ }
+ 
