@@ -70,11 +70,11 @@ resultado_mandante <- function(gols_mandante, gols_visitante){
     
     # Aumentar o vetor de resultados com a pontuação do placar atual
     if (gols_mandante[i] > gols_visitante[i]) {
-      vetor_resultados1 <- append(vetor_resultados, "vitoria")
+      vetor_resultados1 <- append(vetor_resultados1, "vitoria")
     } else if (gols_mandante[i] < gols_visitante[i]) {
-      vetor_resultados1 <- append(vetor_resultados, "derrota")
+      vetor_resultados1 <- append(vetor_resultados1, "derrota")
     } else {
-      vetor_resultados1 <- append(vetor_resultados, "empate")
+      vetor_resultados1 <- append(vetor_resultados1, "empate")
     }
   }
   
@@ -97,11 +97,11 @@ resultado_visitante <- function(gols_mandante, gols_visitante){
     
     # Aumentar o vetor de resultados com a pontuação do placar atual
     if (gols_mandante[i] > gols_visitante[i]) {
-      vetor_resultados1 <- append(vetor_resultados, "derrota")
+      vetor_resultados1 <- append(vetor_resultados1, "derrota")
     } else if (gols_mandante[i] < gols_visitante[i]) {
-      vetor_resultados1 <- append(vetor_resultados, "vitoria")
+      vetor_resultados1 <- append(vetor_resultados1, "vitoria")
     } else {
-      vetor_resultados <- append(vetor_resultados, "empate")
+      vetor_resultados <- append(vetor_resultados1, "empate")
     }
   }
   
