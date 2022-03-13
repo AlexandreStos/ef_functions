@@ -83,13 +83,13 @@ resultado_mandante <- function(gols_mandante, gols_visitante){
 }
 
 
-# criando a função de pontos de visitantes --------------------------------
+# criando a função resultado corinthians visitantes --------------------------------
 
 resultado_visitante <- function(gols_mandante, gols_visitante){
   
   
   # objeto para receber os pontos de cada placar
-  vetor_resultados1 <- c()
+  vetor_resultados2 <- c()
   
   # looping para executar a função para cada linha
   
@@ -97,16 +97,16 @@ resultado_visitante <- function(gols_mandante, gols_visitante){
     
     # Aumentar o vetor de resultados com a pontuação do placar atual
     if (gols_mandante[i] > gols_visitante[i]) {
-      vetor_resultados1 <- append(vetor_resultados1, "derrota")
+      vetor_resultados2 <- append(vetor_resultados2, "derrota")
     } else if (gols_mandante[i] < gols_visitante[i]) {
-      vetor_resultados1 <- append(vetor_resultados1, "vitoria")
+      vetor_resultados2 <- append(vetor_resultados2, "vitoria")
     } else {
-      vetor_resultados <- append(vetor_resultados1, "empate")
+      vetor_resultados2 <- append(vetor_resultados2, "empate")
     }
   }
   
   # Retornar
-  return(vetor_resultados1)
+  return(vetor_resultados2)
 }
 
  
